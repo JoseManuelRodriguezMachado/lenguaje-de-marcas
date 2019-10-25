@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+fieldset#f1 {
+    background-color: grey;
+}
+fieldset#f2 {
+    background-color: lightsalmon;
+}
+fieldset#f3 {
+    background-color: indianred;
+}
+h2 {
+    text-align: center;
+}
+legend {
+    background: white;
+    border: black 1px solid;
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>HOJA DE INSCRIPCION</h2>
+    <h2>EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h2>
+    <fieldset id="f1">
+        <legend>Datos Personales</legend>
+        <table>
+            <tr>
+                <td>Nombre:</td>
+                <td>Nombre:</td>
+                <td>DNI:</td>
+            </tr>
+            <tr>
+                <td><input type="text" name="Nombre" size="15" tabindex="1"></td>
+                <td><input type="text" name="Nombre" size="10" tabindex="1"></td>
+                <td><input type="text" name="DNI" size="15" tabindex="4"></td>
+            </tr>
+            <tr>
+                <td>Localidad de Nacimiento:</td>
+                <td>Provincia:</td>
+                <td>Fecha de Nacimiento:</td>
+            </tr>
+            <tr>
+                <td><input type="text" name="Localidad de Nacimiento" size="15" tabindex="1"></td>
+                <td><select name="Provincia">
+                    <option>Huelva</option>
+                    <option>Malaga</option>
+                    <option>Cordoba</option>
+                    <option>Sevilla</option>
+                    <option>Granada</option>
+                    <option>Jaen</option>
+                    <option>Cadiz</option>
+                    <option>Almeria</option>
+                </select></td>
+                <td><input type="date" name="Fecha de Nacimiento" size="15"></td>
+            </tr>
+            <tr>
+                <td colspan="2">Direccion:</td>
+                <td>Codigo Postal:</td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="text" name="Direccion" size="40" tabindex="1"></td>
+                <td><input type="text" name="Codigo Postal" size="15" tabindex="1"></td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset id="f2">
+        <legend>Forma de Acceso</legend>
+        <dl>
+            <dt><input type="radio" name="Directo" tabindex="5">Directo</dt>
+            <dd><input type="radio" name="Bachillerato" tabindex="5">Bachillerato<input type="text" name="Bachillerato"></dd>
+            <dd><input type="radio" name="Experimental" tabindex="5">Experimental</dd>
+            <dd><input type="radio" name="CFGS" tabindex="5">CFGS<input type="text" name="CFGS"></dd>
+            <dd><input type="radio" name="CFGM" tabindex="5">CFGM</dd>
+            <dd><input type="radio" name="Otros" tabindex="5">Otros (especifique)<input type="text" name="otros"></dd>
+            <dt><input type="radio" name="Prueba libre" tabindex="6">Prueba libre</dt>
+        </dl>
+    </fieldset>
+    <fieldset id="f3">
+        <legend>Documentos Adjuntos</legend>
+        <table>
+            <tr>
+                <td><input type="checkbox" name="Fotocopia">Fotocopia DNI</td>
+                <td><input type="checkbox" name="Certificado">Certificado Academico</td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="checkbox" name="Otrosd">Otros documentos(especifique)<input type="text" name="otros"></td>
+            </tr>
+        </table>
+    </fieldset>
+    <br>
+    <input type="button" onclick="mensaje('Ha enviado el curriculum')" value="Enviar Solicitud">
+</body>
+</html>
